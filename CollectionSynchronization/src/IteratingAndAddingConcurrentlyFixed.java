@@ -21,7 +21,7 @@ public class IteratingAndAddingConcurrentlyFixed {
         thread.start();
 
         Thread.sleep(50);
-        
+
         synchronized (syncedNumbers) {
             Iterator<Integer> iterator = syncedNumbers.iterator();
             while (iterator.hasNext()) {
